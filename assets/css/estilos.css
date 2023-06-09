@@ -525,6 +525,7 @@ header{
     z-index: 100;
     box-shadow: 0 0 32px 0 rgba(31, 38, 135, 0.37);
     background: rgba(31,38,135,0.0.37);
+    -webkit-backdrop-filter: blur(40px);
     backdrop-filter: blur(40px);
 }
 
