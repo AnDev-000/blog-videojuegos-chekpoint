@@ -8,10 +8,12 @@
 
     <link rel="stylesheet" href="assets/css/estilos.css">
     <script src="https://kit.fontawesome.com/91a0cccd3b.js" crossorigin="anonymous"></script>
+    <link href="https://file.myfontastic.com/PwrDwNNe8Ukx8XDPshibCA/icons.css" rel="stylesheet">
 
 </head>
 
 <body>
+
     <header>
         <div class="contenedor_header">
             <div class="logo">
@@ -19,20 +21,39 @@
 
                 <b id="logo-ID">:::</b>   
                 
-                
             </div>
 
             <div class="menu">
+                <!--Menu Hamburguesa(Movil)-->
+                <input type="checkbox" id="check-menu">
+                <label for="check-menu" id="label-check">
+                    <i class="icon-menu"></i>
+                </label>
+                
+
+
+                <!--<span class="icon-menu" id="btn-hamburguesa"></span>-->
+
+
                 <nav>
-                    <ul>
-                        <li><a href="#">Inicio.</a></li>
-                        <li><a href="#">Glosario</a></li>
-                        <li><a href="#">Tutoriales</a></li>
-                        <li><a href="#">Mandos</a></li>
-                        <li><a href="#">Reviews</a></li>
-                        <li><a href="#">Contacto</a></li>
+                    <ul class="menu-lista" id="">
+                        <li><a href="#" class="menu_link">Inicio</a></li>
+                        <li><a href="#" class="menu_link">Glosario</a></li>
+                        <li><a href="#" class="menu_link">Tutoriales</a>
+                            <ul>
+                                <li><a href="#">Retroarch</a></li>
+                                <li><a href="#">launchbox</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#" class="menu_link">Mandos</a></li>
+                        <li><a href="#" class="menu_link">Reviews</a></li>
+                        <li><a href="#" class="menu_link">Contacto</a></li>
                     </ul>
                 </nav>
+                
+                <div class="buscador">
+                    <input type="search" placeholder="Que buscas">
+                </div>
             </div>
 
         </div>
@@ -41,6 +62,7 @@
 
     <main>
         <!--Portada de inicio-->
+        <!--Se colocara un video de background-->
         <div class="header_fondo">
             <div class="fondo">
                 <section class="fondo_texto">
@@ -56,14 +78,14 @@
         <div class="contenedor_banner">
             <div class="banner-uno">
                 <div class="imagen_banner-uno">
-                    <img src="assets/imagenes/hotaru.png" id="imagen-b" alt="">
+                    <img src="assets/imagenes/reko.png" id="imagen-b" alt="">
                 </div>
                 <div class="imagen_icono-uno">
                     <img src="assets/imagenes/obj1.png" id="icono-b" alt="">
                 </div>
 
                 <div class="texto_banner-uno">
-                    <h2>En definitiva, es un título que combina aspectos clásicos de la saga con interesantes innovaciones...</h2>
+                    <h2>En definitiva, es un título que combina aspectos clásicos del genero con interesantes innovaciones...</h2>
                     <input type="button" value="Leer más">
                 </div>
             </div>
@@ -72,57 +94,34 @@
 
 
 
-
-        <div class="header_fondo">
-            <div class="fondo">
-                <section class="fondo_texto">
-                    <h1>Bienvenidos a Chekpoint</h1>
-                    <p>Aqui encontraras todo acerca del mundo arcade, historia, guias, tutoriales...</p>
-                </section>
-                <section class="fondo_imagen">
-                    <img src="assets/imagenes/arcadestick 3.png" id="img_portada" alt="">
-                </section>
-            </div>
-        </div>
-
-        <div class="header_fondo">
-            <div class="fondo">
-                <section class="fondo_texto">
-                    <h1>Bienvenidos a Chekpoint</h1>
-                    <p>Aqui encontraras todo acerca del mundo arcade, historia, guias, tutoriales...</p>
-                </section>
-                <section class="fondo_imagen">
-                    <img src="assets/imagenes/arcadestick 3.png" id="img_portada" alt="">
-                </section>
-            </div>
-        </div>
-
-        <div class="header_fondo">
-            <div class="fondo">
-                <section class="fondo_texto">
-                    <h1>Bienvenidos a Chekpoint</h1>
-                    <p>Aqui encontraras todo acerca del mundo arcade, historia, guias, tutoriales...</p>
-                </section>
-                <section class="fondo_imagen">
-                    <img src="assets/imagenes/arcadestick 3.png" id="img_portada" alt="">
-                </section>
-            </div>
-        </div>
-        <div class="header_fondo">
-            <div class="fondo">
-                <section class="fondo_texto">
-                    <h1>Bienvenidos a Chekpoint</h1>
-                    <p>Aqui encontraras todo acerca del mundo arcade, historia, guias, tutoriales...</p>
-                </section>
-                <section class="fondo_imagen">
-                    <img src="assets/imagenes/arcadestick 3.png" id="img_portada" alt="">
-                </section>
-            </div>
-        </div>
-        
-
-
     </main>
+
+    <!--Footer-->
+    <footer class="contenedor-footer">
+
+        <div class="contenedor_footer-columnas">
+            <!-- 3 Columnas con flexbox -->
+            <div class="columna_uno">
+                <h2 class="columna_titulo">¿Quienes somos?</h2>
+                <p class="column__txt">Apasionados por el mundo arcades, haciendo su mejor esfuerzo</p>
+            </div>
+
+            <div class="columna_dos">
+                <h2 class="columna_titulo">Contactanos</h2>
+                <p class="columna_txt">Av.Falsa 123, torre gemela 1, piso 69,Providencia,Santiago - Chile</p>
+                <p class="columna_txt">Tel:56228010000</p>
+                <p class="columna_txt">consultas@Checkpoint.cl</p>
+            </div>
+            <div class="columna_tres">
+                <h2 class="columna_titulo">Siguenos en nuestras redes</h2>
+                <p class="columna_txt"><a href="" class="icon-facebook">Facebook</a></p>
+                <p class="columna_txt"><a href="" class="icon-twitter">Síguenos en Twitter</a></p>
+                <p class="columna_txt"><a href="" class="icon-youtube-play">Visita nuestro canal</a></p>
+            </div>
+        </div>
+        <p class="copy">Copyright © 2023 Chekpoint Chile Ltda.</p>
+
+    </footer>
     <script src="assets/js/script.js"></script>
 </body>
 </html>
