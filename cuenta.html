@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="assets/css/estilos.css">
+    <link rel="stylesheet" href="assets/css/estilosCuentaFromulario.css">
+    <script src="https://kit.fontawesome.com/91a0cccd3b.js" crossorigin="anonymous"></script>
+    <link href="https://file.myfontastic.com/PwrDwNNe8Ukx8XDPshibCA/icons.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <div class="contenedor_header">
+            <div class="logo">
+                <a href="#">Chekpoint </a> <img src="assets/imagenes/" alt="">
+                <b id="logo-ID">:::</b>   
+            </div>
+
+            <div class="menu">
+                <!--Menu Hamburguesa(Movil)-->
+                <input type="checkbox" id="check-menu">
+                <label for="check-menu" id="label-check">
+                    <i class="icon-menu"></i>
+                </label>
+                
+
+
+                <!--<span class="icon-menu" id="btn-hamburguesa"></span>-->
+
+
+                <nav class="nav_menu">
+                    <ul class="menu-lista" id="">
+                        <li><a href="#" class="menu_link">Inicio</a></li>
+                        <li><a href="#" class="menu_link">Glosario</a></li>
+                        <li><a href="#" class="menu_link">Tutoriales</a>
+                            <ul>
+                                <li><a href="#">Retroarch</a></li>
+                                <li><a href="#">launchbox</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#" class="menu_link">Mandos</a></li>
+                    </ul>
+                </nav>
+                
+                <div class="buscador">
+                    <input type="search" placeholder="Buscar...">
+                </div>
+                <div class="icon-user">
+                </div>
+            </div>
+
+        </div>
+    </header>
+
+
+
+
+
+    <main class="container-main">
+        <div class="contenedor__todo">
+            <!-- Contenedor -->
+            <div class="caja__trasera">
+                <div class="caja__trasera-login">
+                    <h3>¿Ya tienes una cuenta?</h3>
+                    <p>Inicia sesión para entrar en la página</p>
+                    <button id="btn__iniciar-sesion">Iniciar Sesión</button>
+                </div>
+                <div class="caja__trasera-register">
+                    <h3>¿Aún no tienes una cuenta?</h3>
+                    <p>Regístrate para que puedas iniciar sesión</p>
+                    <button id="btn__registrarse">Regístrarse</button>
+                </div>
+            </div>
+
+            <!--Formulario de Login y registro-->
+            <div class="contenedor__login-register">
+                <!--Login-->
+                <form action="php/login.php" method="POST" class="formulario__login" id="formulario__login">
+                    <h2>Iniciar Sesión</h2>
+
+
+                    <div class="formulario__grupo" id="grupo__correoL">
+                        <div class="formulario__grupo-input">
+                        <input class="formulario__input" type="email" placeholder="Correo Electronico" name="correoL" required>
+                            <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                        </div>
+                        <p class="formulario__input-error">El correo electronico debe contener solo letras, numeros, puntos y guiones. (Ejemplo: Ejemplo123@gmail.com)</p>
+                    </div>
+
+                    <div class="formulario__grupo" id="grupo__contrasenaL">
+                        <div class="formulario__grupo-input">
+                        <input class="formulario__input" type="password" placeholder="Contraseña" name="contrasenaL" required>                           
+                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                        </div>
+                        <p class="formulario__input-error">La contraseña debe tener entre 6 y 12 digitos</p>
+                    </div>
+
+                    <button type="submit"  >Entrar</button>
+                </form>
+
+                <!--Register-->
+                <form action="php/registro.php" method="POST" class="formulario__register" id="formulario__register" >
+                    <h2>Regístrarse</h2>
+
+                    <div class="formulario__grupo" id="grupo__nombreR">
+                        <div class="formulario__grupo-input">
+                            <input class="formulario__input" type="text" placeholder="Nombre" name="nombreR" id="nombreRegistro" required>
+                            <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                        </div>
+                        <p class="formulario__input-error">El nombre solo debe contener letras.</p>
+                    </div>
+
+                    <div class="formulario__grupo" id="grupo__apellidoR">
+                        <div class="formulario__grupo-input">
+                        <input class="formulario__input" type="text" placeholder="Apellido" name="apellidoR" id="apellidoRegistro"  required>
+                            <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                        </div>
+                        <p class="formulario__input-error">El apellido solo debe contener letras</p>
+                    </div>
+
+                    <div class="formulario__grupo" id="grupo__correoR">
+                        <div class="formulario__grupo-input">
+                            <input class="formulario__input" type="email" placeholder="Correo Electronico" name="correoR" id="correoRegistro"  required>   
+                            <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                        </div>
+                        <p class="formulario__input-error">El correo electronico debe contener solo letras, numeros, puntos y guiones. (Ejemplo: Ejemplo123@gmail.com)</p>
+                    </div>
+
+                    <div class="formulario__grupo" id="grupo__contrasenaR">
+                        <div class="formulario__grupo-input">
+                            <input class="formulario__input" type="password" placeholder="Contraseña" name="contrasenaR" id="contrasenaRegistro" required>
+                            <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                        </div>
+                        <p class="formulario__input-error">La contraseña debe tener entre 6 y 12 digitos</p>
+                    </div>
+
+                    <div class="formulario__mensaje" id="formulario__mensaje">
+				        <p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Rellene los campos correctamente. </p>
+			        </div>
+                    
+                    <div class="formulario__grupo formulario__grupo-btn-enviar">   
+                    <button class="formulario__btn" id='btn' disabled>Regístrarse</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+
+
+
+    
+
+    
+    <!--Footer-->
+    <footer class="contenedor-footer">
+
+        <div class="contenedor_footer-columnas">
+            <!-- 3 Columnas con flexbox -->
+            <div class="columna_uno">
+                <h2 class="columna_titulo">¿Quienes somos?</h2>
+                <p class="column__txt">Apasionados por el mundo arcades, haciendo su mejor esfuerzo</p>
+            </div>
+
+            <div class="columna_dos">
+                <h2 class="columna_titulo">Contactanos</h2>
+                <p class="columna_txt">Av.Falsa 123, torre gemela 1, piso 69,Providencia,Santiago - Chile</p>
+                <p class="columna_txt">Tel:56228010000</p>
+                <p class="columna_txt">consultas@Checkpoint.cl</p>
+            </div>
+            <div class="columna_tres">
+                <h2 class="columna_titulo">Siguenos en nuestras redes</h2>
+                <p class="columna_txt"><a href="" class="icon-facebook">Facebook</a></p>
+                <p class="columna_txt"><a href="" class="icon-twitter">Síguenos en Twitter</a></p>
+                <p class="columna_txt"><a href="" class="icon-youtube-play">Visita nuestro canal</a></p>
+            </div>
+        </div>
+        <p class="copy">Copyright © 2023 Chekpoint Chile Ltda.</p>
+
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+    
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/CuentaFormulario.js"></script>
+    <script src="assets/js/validacionFormulario.js"></script>
+</body>
+</html>
